@@ -1,0 +1,24 @@
+body {
+    background: #1E2E47;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#spinner-border {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+#contenedor-spinner {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1000;
+}

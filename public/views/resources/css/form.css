@@ -1,0 +1,84 @@
+::-webkit-scrollbar {
+	display: none;
+}
+.superiorBar{
+	background-color: #005eb8;
+	/* padding-bottom: 15px; */
+}
+
+/*contenedor de la imagen del formulario*/
+.columnaContainer {
+	padding: 25px;
+}
+
+.columnaContainer img{
+	margin-top: 0px !important;
+		width: 70%;
+		filter: drop-shadow(3px 3px 1px rgb(143, 202, 0, 0.5)) !important;
+		background-color: rgba(143, 202, 0, 0);
+		max-height: 630px !important;
+}
+
+.text-footer a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 0px 5px;
+}
+
+.text-footer {
+	padding-top: 20px;
+	background-color: #182437;
+}
+
+.text-footer p{
+	font-size: 10px;
+}
+
+.errLabel{
+	filter: drop-shadow(3px 3px 1px rgb(0, 0, 0)) !important;
+		color: #8fca00;
+		margin-bottom: 3px;
+}
+
+/*boton de registro, pagina principal*/
+
+.btn-registro{
+	color: #ffffff;
+	background-color: #8fca00;
+	width: 100%;
+	font-weight: 600;
+}
+
+/*estilos para eventos de focus*/
+
+.focus:focus {
+	border-style: solid;
+	border-width: 4px;
+	border-color: #8fca00;
+}
+
+.buttonCheckNames{
+	border-style: solid;
+	border-width: 4px;
+	border-color: #8fca00;	
+}
+
+.boxCheckNames{
+	border-style: solid;
+	border-width: 4px;
+	border-color: #8fca00;
+	padding-top: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+		
+}
+
+/*responsive desing*/
+
+@media (max-width: 991px){
+	.columnaContainer img{
+		display: none;
+	}
+}

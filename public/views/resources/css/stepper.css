@@ -1,0 +1,98 @@
+.stepper-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos móviles */
+    cursor: grab;
+}
+
+.stepper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    padding: 0 15px;
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.stepper-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 15px; /* Ajusta esta posición según el diseño */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #5c728a;
+    z-index: 0;
+    min-width: 100%; /* Asegura que la línea cubra el ancho total del contenedor */
+}
+
+.stepper-item {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    min-width: 80px;
+    margin-right: 20px;
+}
+
+.stepper-item .step-counter {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5c728a;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.stepper-item.active .step-counter {
+    background-color: #007bff;
+    border: 2px solid white;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.stepper-item.completed .step-counter {
+    background-color: #2ecc71;
+}
+
+.stepper-item .step-name {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ffffff;
+    white-space: normal; /* Permite el salto de línea en textos largos */
+}
+
+.stepper-item.active .step-name, .stepper-item.completed .step-name {
+    color: #ffffff;
+}
+
+.step {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.step.active {
+    display: block;
+    opacity: 1;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
