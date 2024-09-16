@@ -1,0 +1,2274 @@
+TransactionCompleted tiene lo siguiente Illuminate\Database\Eloquent\Collection Object
+(
+    [items:protected] => Array
+        (
+            [0] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043295
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:37:17
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043295
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:37:17
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [1] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043313
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:50:15
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043313
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:50:15
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [2] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043314
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 10:41:30
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043314
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 10:41:30
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [3] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043266
+                            [estado] => 1
+                            [updated_at] => 2024-09-13 12:17:18
+                            [created_at] => 2024-09-13 12:15:44
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => ICEBERG
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043266
+                            [estado] => 1
+                            [updated_at] => 2024-09-13 12:17:18
+                            [created_at] => 2024-09-13 12:15:44
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => ICEBERG
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [4] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043267
+                            [estado] => 1
+                            [updated_at] => 2024-09-13 12:20:14
+                            [created_at] => 2024-09-13 12:19:08
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => ICEBERG
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043267
+                            [estado] => 1
+                            [updated_at] => 2024-09-13 12:20:14
+                            [created_at] => 2024-09-13 12:19:08
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => ICEBERG
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [5] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043290
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 17:20:39
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043290
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 17:20:39
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [6] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043302
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 08:37:15
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043302
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 08:37:15
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [7] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043311
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:30:04
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043311
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:30:04
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [8] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043312
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:36:16
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043312
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:36:16
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [9] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043272
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 14:29:38
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043272
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 14:29:38
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [10] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 89975833
+                            [estado] => 1
+                            [updated_at] => 2024-09-13 14:55:34
+                            [created_at] => 2024-09-13 14:53:34
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => ICEBERG
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 89975833
+                            [estado] => 1
+                            [updated_at] => 2024-09-13 14:55:34
+                            [created_at] => 2024-09-13 14:53:34
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => ICEBERG
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [11] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043279
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 15:04:37
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043279
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 15:04:37
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [12] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043281
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 15:12:17
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043281
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 15:12:17
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [13] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043315
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 10:52:33
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043315
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 10:52:33
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [14] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043294
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:35:20
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043294
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:35:20
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [15] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043301
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 16:25:56
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043301
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 16:25:56
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [16] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043278
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 14:52:54
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043278
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-13 14:52:54
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [17] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043297
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:45:17
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043297
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:45:17
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [18] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043298
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:52:54
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043298
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:52:54
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [19] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043299
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:56:33
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043299
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-15 00:56:33
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [20] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043305
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 08:42:13
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043305
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 08:42:13
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+            [21] => App\Models\TransactionCompleted Object
+                (
+                    [table:protected] => PORTAL_PAGOS_CUN.vd_ppt_cun_transaccion_ok
+                    [connection:protected] => oracle
+                    [primaryKey:protected] => id
+                    [keyType:protected] => int
+                    [incrementing] => 1
+                    [with:protected] => Array
+                        (
+                        )
+
+                    [withCount:protected] => Array
+                        (
+                        )
+
+                    [preventsLazyLoading] => 
+                    [perPage:protected] => 15
+                    [exists] => 1
+                    [wasRecentlyCreated] => 
+                    [escapeWhenCastingToString:protected] => 
+                    [attributes:protected] => Array
+                        (
+                            [referencia] => 82043309
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:13:48
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [referencia] => 82043309
+                            [estado] => 0
+                            [updated_at] => 
+                            [created_at] => 2024-09-16 09:13:48
+                            [usu_creacion] => ICEBERG
+                            [usu_actualizacion] => 
+                            [observaciones] => 
+                        )
+
+                    [changes:protected] => Array
+                        (
+                        )
+
+                    [casts:protected] => Array
+                        (
+                        )
+
+                    [classCastCache:protected] => Array
+                        (
+                        )
+
+                    [attributeCastCache:protected] => Array
+                        (
+                        )
+
+                    [dates:protected] => Array
+                        (
+                        )
+
+                    [dateFormat:protected] => 
+                    [appends:protected] => Array
+                        (
+                        )
+
+                    [dispatchesEvents:protected] => Array
+                        (
+                        )
+
+                    [observables:protected] => Array
+                        (
+                        )
+
+                    [relations:protected] => Array
+                        (
+                        )
+
+                    [touches:protected] => Array
+                        (
+                        )
+
+                    [timestamps] => 1
+                    [hidden:protected] => Array
+                        (
+                        )
+
+                    [visible:protected] => Array
+                        (
+                        )
+
+                    [fillable:protected] => Array
+                        (
+                        )
+
+                    [guarded:protected] => Array
+                        (
+                            [0] => *
+                        )
+
+                )
+
+        )
+
+    [escapeWhenCastingToString:protected] => 
+)
