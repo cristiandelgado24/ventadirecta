@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Form\GetDocumentTypeController;
+use App\Http\Controllers\Form\GetDocumentTypesController;
 use App\Http\Controllers\Transaction\CompleteOneController;
 use App\Http\Controllers\Transaction\GetCompletedController;
 use App\Http\Controllers\Transaction\ResultController;
