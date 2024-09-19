@@ -54,29 +54,24 @@ class CompleteOneController extends Controller
 
                     $respuestaPagosResult = json_decode($response->getBody());
 
-                    //return $respuestaPagosResult->status->status;
-                    return $completedTransaction;
-                    $completedTransaction->estado = 1;
-                    $completedTransaction->save();
-
-
-
+                    /*
                     if (isset($respuestaPagosResult->status->status) && ($respuestaPagosResult->status->status == 'APPROVED'
                         || $respuestaPagosResult->status->status == 'REJECTED')) {
 
+                    */
+
+                    if (isset($respuestaPagosResult->status->status) && $respuestaPagosResult->status->status == 'APPROVED') {
                         $completedTransaction->estado = 1;
                         $completedTransaction->save();
 
                         return $completedTransaction;
 
                     }
-
-
                 }
             }
+        } catch (\Throwable | \Exception $e) {
 
 
-        } catch (\Throwable  | \Exception $e) {
             return $e->getMessage();
         }
     }
