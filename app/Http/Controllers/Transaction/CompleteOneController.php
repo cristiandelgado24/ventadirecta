@@ -18,8 +18,6 @@ class CompleteOneController extends Controller
                 ->orderBy('created_at', 'desc')
                 ->first();
 
-            //return $completedTransactions;
-
             $loginData = [
                 'username' => getenv('USUARIO_SERVICIOS'),
                 'password' => getenv('PASSWORD_SERVICIOS')

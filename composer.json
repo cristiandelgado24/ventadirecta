@@ -5,12 +5,13 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "7.4",
+        "php": "^7.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "symfony/psr-http-message-bridge": "^2.3",
         "yajra/laravel-oci8": "^8.8"
     },
     "require-dev": {

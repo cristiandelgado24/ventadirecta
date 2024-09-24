@@ -9,5 +9,7 @@ class GetDocumentTypesUseCase implements GetDocumentTypesUseCaseInterface
     public function handle()
     {
 
+
+
     }
 }

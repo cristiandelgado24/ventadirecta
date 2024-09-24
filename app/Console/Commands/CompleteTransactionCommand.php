@@ -88,7 +88,18 @@ class CompleteTransactionCommand extends Command
 
                         $respuestaPagosResult = json_decode($response->getBody());
 
-                        if (isset($respuestaPagosResult->status->status) && $respuestaPagosResult->status->status == 'APPROVED') {
+                        //Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true))
+
+                        /*
+                        if ((isset($respuestaPagosResult->status->status) || isset($respuestaPagosResult->payment[0]->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
+                                || $respuestaPagosResult->payment[0]->status->status == 'REJECTED' || $respuestaPagosResult->status->status == 'REJECTED')) {
+                            $completedTransaction->estado = 1;
+                            $completedTransaction->save();
+                        }
+                        */
+
+                        if ((isset($respuestaPagosResult->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
+                               || $respuestaPagosResult->status->status == 'REJECTED')) {
                             $completedTransaction->estado = 1;
                             $completedTransaction->save();
                         }

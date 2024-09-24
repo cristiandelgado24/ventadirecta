@@ -3,6 +3,7 @@
 use App\Http\Controllers\Form\GetDocumentTypeController;
 use App\Http\Controllers\Form\GetDocumentTypesController;
 use App\Http\Controllers\Transaction\CompleteOneController;
+use App\Http\Controllers\Transaction\GenerateRespuestaPagoController;
 use App\Http\Controllers\Transaction\GetCompletedController;
 use App\Http\Controllers\Transaction\ResultController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,9 @@ Route::get('/', function () {
 Route::get('/transaction-result/{id}', ResultController::class)->name('transaction.result');
 Route::get('/get-completed-transactions', GetCompletedController::class)->name('transaction.get-completed');
 Route::get('/complete-one-transaction', CompleteOneController::class)->name('transaction.complete-one');
+Route::get('/generate-respuesta-pago/{id}', GenerateRespuestaPagoController::class)->name('transaction.generate-respuesta-pago');
+
+
 
 Route::get('/prueba', function() {
     try {
