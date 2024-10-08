@@ -12,7 +12,9 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "symfony/psr-http-message-bridge": "^2.3",
-        "yajra/laravel-oci8": "^8.8"
+        "yajra/laravel-oci8": "^8.8",
+        "ext-curl": "*",
+        "ext-json": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
