@@ -2,8 +2,9 @@
 
 namespace App\UseCases\Contracts\Transaction;
 
+use App\DTOs\Transaction\SendEmailDTO;
+
 interface SendEmailUseCaseInterface
 {
-    public function handle($email, $name, $headerText, $reference = null, $user = null,
-                           $password = null, $pending = false, $approved = false, $rejected = false, $cancelled = false);
+    public function handle(SendEmailDTO $sendEmailDTO);
 }

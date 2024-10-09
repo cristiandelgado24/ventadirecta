@@ -2,34 +2,34 @@
 
 namespace App\UseCases\Transaction;
 
+use App\DTOs\Transaction\SendEmailDTO;
 use App\UseCases\Contracts\Transaction\SendEmailUseCaseInterface;
 
 class SendEmailUseCase implements SendEmailUseCaseInterface
 {
-    public function handle($email, $name, $headerText, $reference = null, $user = null,
-                           $password = null, $pending = false, $approved = false, $rejected = false, $cancelled = false)
+    public function handle(SendEmailDTO $sendEmailDTO)
     {
         try {
-            if ($approved) {
+            if ($sendEmailDTO->approved) {
                 $emailBody = '
         <div class="contenedor">
             <div class="header">
                 <div class="header-left" style="width: 50%;"><br></div>
-                <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$headerText.'<br></div>
+                <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$sendEmailDTO->headerText.'<br></div>
             </div>
             <div class="contenedor2">
                 <div class="text">
                     <p>
-                        ¡Recibimos tu pago N° <strong>'.$reference.'</strong>! Ahora puedes comenzar tu proceso de legalización de matrícula
+                        ¡Recibimos tu pago N° <strong>'.$sendEmailDTO->reference.'</strong>! Ahora puedes comenzar tu proceso de legalización de matrícula
                         en nuestra plataforma <strong><a href="'.getenv('URL_INSCRIPCION_SINU').'">SINÚ</a></strong>, aquí están tus credenciales
                     </p>
                 </div><br>
                 <div class="text" style="line-height: 0;">
-                    <p>Usuario: <strong>'.$user.'</strong></p>
+                    <p>Usuario: <strong>'.$sendEmailDTO->user.'</strong></p>
                     <p class="text-description">(Tu documento de identidad, sin puntos ni comas)</p>
                 </div><br>
                 <div class="text" style="line-height: 0;">
-                    <p>Contraseña: <strong>'.$password.'</strong></p>
+                    <p>Contraseña: <strong>'.$sendEmailDTO->password.'</strong></p>
                     <p class="text-description">(Tu número de pago)</p>
                 </div><br>
 
@@ -75,18 +75,17 @@ class SendEmailUseCase implements SendEmailUseCaseInterface
        ';
             }
 
-
-            if ($rejected) {
+            if ($sendEmailDTO->rejected) {
                 $emailBody = '
         <div class="contenedor">
             <div class="header">
                 <div class="header-left" style="width: 50%;"><br></div>
-                <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$headerText.'<br></div>
+                <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$sendEmailDTO->headerText.'<br></div>
             </div>
             <div class="contenedor2">
                 <div class="text">
                     <p>
-                        Tu pago N° <strong>'.$reference.'</strong> ha sido rechazado.<br>
+                        Tu pago N° <strong>'.$sendEmailDTO->reference.'</strong> ha sido rechazado.<br>
                         Por favor, verifica tu método de pago o inténtalo nuevamente pero con otro medio desde nuestra plataforma.
                     </p>
                 </div><br>
@@ -117,17 +116,17 @@ class SendEmailUseCase implements SendEmailUseCaseInterface
        ';
             }
 
-            if ($pending) {
+            if ($sendEmailDTO->pending) {
                 $emailBody = '
         <div class="contenedor">
     <div class="header">
         <div class="header-left" style="width: 50%;"><br></div>
-        <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$headerText.'<br></div>
+        <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$sendEmailDTO->headerText.'<br></div>
     </div>
     <div class="contenedor2">
         <div class="text">
             <p>
-                Tu pago No. <strong>'.$reference.'</strong> está pendiente de confirmación.
+                Tu pago No. <strong>'.$sendEmailDTO->reference.'</strong> está pendiente de confirmación.
                 <br>
                 <br>
                 Recibirás una notificación a este correo electrónico una vez que el pago haya sido procesado.
@@ -162,12 +161,12 @@ class SendEmailUseCase implements SendEmailUseCaseInterface
     </div>';
             }
 
-            if ($cancelled) {
+            if ($sendEmailDTO->cancelled) {
                 $emailBody = '
         <div class="contenedor">
     <div class="header">
         <div class="header-left" style="width: 50%;"><br></div>
-        <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$headerText.'<br></div>
+        <div class="header-right" style="width: 50%; padding: 5%; text-align: center;">'.$sendEmailDTO->headerText.'<br></div>
     </div>
     <div class="contenedor2">
         <div class="text">
@@ -214,8 +213,8 @@ class SendEmailUseCase implements SendEmailUseCaseInterface
                 "to" => [
                     [
                         "email_address" => [
-                            "address" => $email,
-                            "name" => $name
+                            "address" => $sendEmailDTO->email,
+                            "name" => $sendEmailDTO->name
                         ],
                         "merge_info" => [
                             "emailBody" => $emailBody
@@ -249,12 +248,8 @@ class SendEmailUseCase implements SendEmailUseCaseInterface
             curl_close($curl);
 
             return $response;
-
         } catch (\Exception $e) {
             echo $e->getMessage();
         }
-
-
-
     }
 }

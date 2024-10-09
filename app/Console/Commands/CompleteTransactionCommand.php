@@ -58,6 +58,7 @@ class CompleteTransactionCommand extends Command
             $client = new Client();
 
             $url = getenv('SERVICIOS_CUN_API');
+            $appURL = getenv('APP_URL');
 
             $response = $client->post($url . '/api/v1/auth/login', [
                 'json' => $loginData,
@@ -88,18 +89,42 @@ class CompleteTransactionCommand extends Command
 
                         $respuestaPagosResult = json_decode($response->getBody());
 
-                        //Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true))
-
-                        /*
-                        if ((isset($respuestaPagosResult->status->status) || isset($respuestaPagosResult->payment[0]->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
-                                || $respuestaPagosResult->payment[0]->status->status == 'REJECTED' || $respuestaPagosResult->status->status == 'REJECTED')) {
-                            $completedTransaction->estado = 1;
-                            $completedTransaction->save();
-                        }
-                        */
+                        Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
 
                         if ((isset($respuestaPagosResult->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
                                || $respuestaPagosResult->status->status == 'REJECTED')) {
+                            /*
+                            if ($respuestaPagosResult->status->status == 'APPROVED') {
+                                $approvedStatus = true;
+                                $rejectedStatus = false;
+                            }
+
+                            if ($respuestaPagosResult->status->status == 'REJECTED') {
+                                $approvedStatus = false;
+                                $rejectedStatus = true;
+                            }
+
+                            $payload = [
+                                "email" => "cristian_delgado@cun.edu.co",
+                                "name" => "Cristian Delgado",
+	                            "headerText" => "¡Gracias por completar la transacción!",
+	                            "reference" => "123123",
+	                            "user" => "user",
+	                            "password" => "password",
+	                            "pending" => false,
+	                            "approved" => $approvedStatus,
+	                            "rejected" => $rejectedStatus,
+	                            "cancelled" => false
+                            ];
+
+
+
+                            $response = $client->request('POST', $appURL . '/api/v1/transaction/send-email', [
+                                'json' => []
+                            ]);
+
+                            */
+
                             $completedTransaction->estado = 1;
                             $completedTransaction->save();
                         }
