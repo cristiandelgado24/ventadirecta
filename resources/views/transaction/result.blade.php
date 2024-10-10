@@ -533,8 +533,9 @@
             cunIMG.src = "resources/images/cun-logo-ext.png"
 
             //doc.addImage(cunIMG, 'png', 25, 30, 170, 180);
-            doc.addFont('Montserrat-VariableFont_wght');
-            doc.setFont('Montserrat-VariableFont_wght');
+            //doc.addFont('Montserrat-VariableFont_wght');
+            //doc.setFont('Montserrat-VariableFont_wght');
+
             cunIMG.onload = () => {
                 let pageWidth = doc.internal.pageSize.getWidth();
                 let imgWidth = 60;
@@ -542,7 +543,7 @@
                 let centeredX = (pageWidth - imgWidth) / 2;
 
                 doc.addImage(cunIMG, 'png', centeredX, 10, imgWidth, imgHeight);
-
+                /*
                 doc.addFileToVFS('Montserrat-VariableFont_wght.ttf', 'resources/js/fonts/Montserrat-VariableFont_wght.ttf');
                 doc.addFont(
                     "Montserrat-VariableFont_wght-normal.ttf",
@@ -551,6 +552,7 @@
                 );
 
                 doc.setFont('Montserrat-VariableFont_wght','Arial');
+                */
 
                 if (estado == 'APPROVED') {
                     doc.setTextColor(0, 179, 136);
@@ -647,15 +649,10 @@
                     doc.text(paymentMethodName, xPos, 160);
                 }
 
-                if (estado == 'REJECTED') {
-
-
-
-                }
-
                 //doc.text(85, 160, valor);
                 doc.save('comprobante-pago.pdf');
             }
+
         });
     });
 

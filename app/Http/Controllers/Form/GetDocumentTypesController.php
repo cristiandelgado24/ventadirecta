@@ -16,8 +16,6 @@ class GetDocumentTypesController extends Controller
         $this->getDocumentTypesUseCase = $getDocumentTypesUseCase;
     }
 
-
-
     public function __invoke()
     {
         $this->getDocumentTypesUseCase->handle();

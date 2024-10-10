@@ -91,6 +91,7 @@ class CompleteTransactionCommand extends Command
 
                         Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
 
+
                         if ((isset($respuestaPagosResult->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
                                || $respuestaPagosResult->status->status == 'REJECTED')) {
                             /*

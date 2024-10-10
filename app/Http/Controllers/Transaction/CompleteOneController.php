@@ -68,8 +68,6 @@ class CompleteOneController extends Controller
                 }
             }
         } catch (\Throwable | \Exception $e) {
-
-
             return $e->getMessage();
         }
     }
