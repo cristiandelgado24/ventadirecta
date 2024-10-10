@@ -5,8 +5,10 @@ namespace App\Providers;
 use App\Repositories\Contracts\Form\FormRepositoryInterface;
 use App\Repositories\Form\FormRepository;
 use App\UseCases\Contracts\Form\GetDocumentTypesUseCaseInterface;
+use App\UseCases\Contracts\SINU\GetFormNumberUseCaseInterface;
 use App\UseCases\Contracts\Transaction\SendEmailUseCaseInterface;
 use App\UseCases\Form\GetDocumentTypesUseCase;
+use App\UseCases\SINU\GetFormNumberUseCase;
 use App\UseCases\Transaction\SendEmailUseCase;
 use Illuminate\Support\ServiceProvider;
 
@@ -19,7 +21,8 @@ class UseCasesServiceProvider extends ServiceProvider
      */
     protected $classes = [
         GetDocumentTypesUseCaseInterface::class => GetDocumentTypesUseCase::class,
-        SendEmailUseCaseInterface::class => SendEmailUseCase::class
+        SendEmailUseCaseInterface::class => SendEmailUseCase::class,
+        GetFormNumberUseCaseInterface::class => GetFormNumberUseCase::class,
     ];
 
     public function register()

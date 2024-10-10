@@ -1,0 +1,13 @@
+EL NUMERO DE FORMULARIO ES EL SIGUIENTE: GuzzleHttp\Psr7\Stream Object
+(
+    [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #699
+    [size:GuzzleHttp\Psr7\Stream:private] => 
+    [seekable:GuzzleHttp\Psr7\Stream:private] => 1
+    [readable:GuzzleHttp\Psr7\Stream:private] => 1
+    [writable:GuzzleHttp\Psr7\Stream:private] => 1
+    [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
+    [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+        (
+        )
+
+)

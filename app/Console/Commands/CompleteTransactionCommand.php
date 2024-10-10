@@ -89,42 +89,60 @@ class CompleteTransactionCommand extends Command
 
                         $respuestaPagosResult = json_decode($response->getBody());
 
-                        Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
-
+                        //Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
 
                         if ((isset($respuestaPagosResult->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
                                || $respuestaPagosResult->status->status == 'REJECTED')) {
-                            /*
+
                             if ($respuestaPagosResult->status->status == 'APPROVED') {
                                 $approvedStatus = true;
                                 $rejectedStatus = false;
+                                $pendingStatus = false;
+                                $cancelledStatus = false;
+                                $loginUser = $respuestaPagosResult->request->buyer->document;
+                                $response = $client->request('GET', $appURL . '/api/v1/SINU/form-number/'.$loginUser);
+                                //$loginPassword = json_decode($response->getBody())->form_number;
+
+                                Storage::append('messages.txt', 'EL NUMERO DE FORMULARIO ES EL SIGUIENTE: '.print_r($response->getBody(), true));
                             }
 
                             if ($respuestaPagosResult->status->status == 'REJECTED') {
                                 $approvedStatus = false;
                                 $rejectedStatus = true;
+                                $pendingStatus = false;
+                                $cancelledStatus = false;
                             }
 
+                            if ($respuestaPagosResult->status->status == 'PENDING') {
+                                $approvedStatus = false;
+                                $rejectedStatus = false;
+                                $pendingStatus = true;
+                                $cancelledStatus = false;
+                            }
+
+                            if ($respuestaPagosResult->status->status == 'REJECTED' && is_null($respuestaPagosResult->payment)) {
+                                $approvedStatus = false;
+                                $rejectedStatus = false;
+                                $pendingStatus = false;
+                                $cancelledStatus = true;
+                            }
+                            die();
                             $payload = [
                                 "email" => "cristian_delgado@cun.edu.co",
                                 "name" => "Cristian Delgado",
 	                            "headerText" => "¡Gracias por completar la transacción!",
 	                            "reference" => "123123",
-	                            "user" => "user",
-	                            "password" => "password",
-	                            "pending" => false,
+	                            "user" => $loginUser,
+	                            "password" => $loginPassword,
+	                            "pending" => $pendingStatus,
 	                            "approved" => $approvedStatus,
 	                            "rejected" => $rejectedStatus,
-	                            "cancelled" => false
+	                            "cancelled" => $cancelledStatus
                             ];
 
-
-
                             $response = $client->request('POST', $appURL . '/api/v1/transaction/send-email', [
-                                'json' => []
+                                'json' => $payload
                             ]);
-
-                            */
 
                             $completedTransaction->estado = 1;
                             $completedTransaction->save();

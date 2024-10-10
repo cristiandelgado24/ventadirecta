@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Form\GetDocumentTypeController;
 use App\Http\Controllers\Form\GetDocumentTypesController;
+use App\Http\Controllers\SINU\GetFormNumberController;
 use App\Http\Controllers\Transaction\CompleteOneController;
 use App\Http\Controllers\Transaction\GenerateRespuestaPagoController;
 use App\Http\Controllers\Transaction\GetCompletedController;
@@ -27,6 +28,7 @@ Route::get('/transaction-result/{id}', ResultController::class)->name('transacti
 Route::get('/get-completed-transactions', GetCompletedController::class)->name('transaction.get-completed');
 Route::get('/complete-one-transaction', CompleteOneController::class)->name('transaction.complete-one');
 Route::get('/generate-respuesta-pago/{id}', GenerateRespuestaPagoController::class)->name('transaction.generate-respuesta-pago');
+Route::get('/get-form-number/{document}', GetFormNumberController::class)->name('SINU.get-form-number');
 
 
 
