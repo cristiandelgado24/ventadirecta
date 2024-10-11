@@ -1,13 +1,712 @@
-EL NUMERO DE FORMULARIO ES EL SIGUIENTE: GuzzleHttp\Psr7\Stream Object
+EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
 (
-    [stream:GuzzleHttp\Psr7\Stream:private] => Resource id #699
-    [size:GuzzleHttp\Psr7\Stream:private] => 
-    [seekable:GuzzleHttp\Psr7\Stream:private] => 1
-    [readable:GuzzleHttp\Psr7\Stream:private] => 1
-    [writable:GuzzleHttp\Psr7\Stream:private] => 1
-    [uri:GuzzleHttp\Psr7\Stream:private] => php://temp
-    [customMetadata:GuzzleHttp\Psr7\Stream:private] => Array
+    [requestId] => 3191737
+    [status] => stdClass Object
         (
+            [status] => APPROVED
+            [reason] => 00
+            [message] => La petición ha sido aprobada exitosamente
+            [date] => 2024-10-11T17:21:30-05:00
         )
 
+    [request] => stdClass Object
+        (
+            [locale] => es_CO
+            [buyer] => stdClass Object
+                (
+                    [document] => 1012565029
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => 3125623445
+                )
+
+            [payer] => stdClass Object
+                (
+                    [document] => 1012565029
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => +573125623445
+                )
+
+            [payment] => stdClass Object
+                (
+                    [reference] => 82043690
+                    [description] => Pago en placetopay
+                    [amount] => stdClass Object
+                        (
+                            [currency] => COP
+                            [total] => 1470000
+                        )
+
+                    [allowPartial] => 
+                    [subscribe] => 
+                )
+
+            [fields] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [keyword] => _processUrl_
+                            [value] => https://checkout-test.placetopay.com/spa/session/3191737/8df85793c5310e6f0020de38d3cf3025
+                            [displayOn] => none
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [keyword] => _session_
+                            [value] => 3191737
+                            [displayOn] => none
+                        )
+
+                )
+
+            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043690
+            [ipAddress] => 190.184.202.245
+            [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+            [expiration] => 2024-10-11T23:21:07.839Z
+        )
+
+    [payment] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [amount] => stdClass Object
+                        (
+                            [to] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [from] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [factor] => 1
+                        )
+
+                    [status] => stdClass Object
+                        (
+                            [date] => 2024-10-11T17:21:24-05:00
+                            [reason] => 00
+                            [status] => APPROVED
+                            [message] => Aprobada
+                        )
+
+                    [receipt] => 99985284
+                    [refunded] => 
+                    [franchise] => CR_DN
+                    [reference] => 82043690
+                    [issuerName] => Diners Club
+                    [authorization] => 000000
+                    [paymentMethod] => diners
+                    [processorFields] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [value] => 012862272
+                                    [keyword] => merchantCode
+                                    [displayOn] => none
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [value] => 00033570
+                                    [keyword] => terminalNumber
+                                    [displayOn] => none
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [value] => 365454
+                                    [keyword] => bin
+                                    [displayOn] => none
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [value] => 0225
+                                    [keyword] => expiration
+                                    [displayOn] => none
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [value] => 1
+                                    [keyword] => installments
+                                    [displayOn] => none
+                                )
+
+                            [5] => stdClass Object
+                                (
+                                    [value] => 0008
+                                    [keyword] => lastDigits
+                                    [displayOn] => none
+                                )
+
+                            [6] => stdClass Object
+                                (
+                                    [value] => c2732941a1e1f34c472794dd520015ec
+                                    [keyword] => id
+                                    [displayOn] => none
+                                )
+
+                            [7] => stdClass Object
+                                (
+                                    [value] => 000
+                                    [keyword] => b24
+                                    [displayOn] => none
+                                )
+
+                        )
+
+                    [internalReference] => 1598992108
+                    [paymentMethodName] => Diners
+                )
+
+        )
+
+    [subscription] => 
 )
+
+EL NUMERO DE FORMULARIO ES EL SIGUIENTE: There is not form number
+EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
+(
+    [requestId] => 3191737
+    [status] => stdClass Object
+        (
+            [status] => APPROVED
+            [reason] => 00
+            [message] => La petición ha sido aprobada exitosamente
+            [date] => 2024-10-11T17:30:13-05:00
+        )
+
+    [request] => stdClass Object
+        (
+            [locale] => es_CO
+            [buyer] => stdClass Object
+                (
+                    [document] => 1012565029
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => 3125623445
+                )
+
+            [payer] => stdClass Object
+                (
+                    [document] => 1012565029
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => +573125623445
+                )
+
+            [payment] => stdClass Object
+                (
+                    [reference] => 82043690
+                    [description] => Pago en placetopay
+                    [amount] => stdClass Object
+                        (
+                            [currency] => COP
+                            [total] => 1470000
+                        )
+
+                    [allowPartial] => 
+                    [subscribe] => 
+                )
+
+            [fields] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [keyword] => _processUrl_
+                            [value] => https://checkout-test.placetopay.com/spa/session/3191737/8df85793c5310e6f0020de38d3cf3025
+                            [displayOn] => none
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [keyword] => _session_
+                            [value] => 3191737
+                            [displayOn] => none
+                        )
+
+                )
+
+            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043690
+            [ipAddress] => 190.184.202.245
+            [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+            [expiration] => 2024-10-11T23:21:07.839Z
+        )
+
+    [payment] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [amount] => stdClass Object
+                        (
+                            [to] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [from] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [factor] => 1
+                        )
+
+                    [status] => stdClass Object
+                        (
+                            [date] => 2024-10-11T17:21:24-05:00
+                            [reason] => 00
+                            [status] => APPROVED
+                            [message] => Aprobada
+                        )
+
+                    [receipt] => 99985284
+                    [refunded] => 
+                    [franchise] => CR_DN
+                    [reference] => 82043690
+                    [issuerName] => Diners Club
+                    [authorization] => 000000
+                    [paymentMethod] => diners
+                    [processorFields] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [value] => 012862272
+                                    [keyword] => merchantCode
+                                    [displayOn] => none
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [value] => 00033570
+                                    [keyword] => terminalNumber
+                                    [displayOn] => none
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [value] => 365454
+                                    [keyword] => bin
+                                    [displayOn] => none
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [value] => 0225
+                                    [keyword] => expiration
+                                    [displayOn] => none
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [value] => 1
+                                    [keyword] => installments
+                                    [displayOn] => none
+                                )
+
+                            [5] => stdClass Object
+                                (
+                                    [value] => 0008
+                                    [keyword] => lastDigits
+                                    [displayOn] => none
+                                )
+
+                            [6] => stdClass Object
+                                (
+                                    [value] => c2732941a1e1f34c472794dd520015ec
+                                    [keyword] => id
+                                    [displayOn] => none
+                                )
+
+                            [7] => stdClass Object
+                                (
+                                    [value] => 000
+                                    [keyword] => b24
+                                    [displayOn] => none
+                                )
+
+                        )
+
+                    [internalReference] => 1598992108
+                    [paymentMethodName] => Diners
+                )
+
+        )
+
+    [subscription] => 
+)
+
+EL NUMERO DE FORMULARIO ES EL SIGUIENTE: There is not form number
+EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
+(
+    [requestId] => 3191738
+    [status] => stdClass Object
+        (
+            [status] => APPROVED
+            [reason] => 00
+            [message] => La petición ha sido aprobada exitosamente
+            [date] => 2024-10-11T17:30:16-05:00
+        )
+
+    [request] => stdClass Object
+        (
+            [locale] => es_CO
+            [buyer] => stdClass Object
+                (
+                    [document] => 1012565030
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => 3125623445
+                )
+
+            [payer] => stdClass Object
+                (
+                    [document] => 1012565030
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => +573125623445
+                )
+
+            [payment] => stdClass Object
+                (
+                    [reference] => 82043691
+                    [description] => Pago en placetopay
+                    [amount] => stdClass Object
+                        (
+                            [currency] => COP
+                            [total] => 1470000
+                        )
+
+                    [allowPartial] => 
+                    [subscribe] => 
+                )
+
+            [fields] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [keyword] => _processUrl_
+                            [value] => https://checkout-test.placetopay.com/spa/session/3191738/ffb50a2112e2f35f0643a119ad1bdaf3
+                            [displayOn] => none
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [keyword] => _session_
+                            [value] => 3191738
+                            [displayOn] => none
+                        )
+
+                )
+
+            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043691
+            [ipAddress] => 190.184.202.245
+            [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+            [expiration] => 2024-10-11T23:28:46.239Z
+        )
+
+    [payment] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [amount] => stdClass Object
+                        (
+                            [to] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [from] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [factor] => 1
+                        )
+
+                    [status] => stdClass Object
+                        (
+                            [date] => 2024-10-11T17:29:02-05:00
+                            [reason] => 00
+                            [status] => APPROVED
+                            [message] => Aprobada
+                        )
+
+                    [receipt] => 99985742
+                    [refunded] => 
+                    [franchise] => CR_DN
+                    [reference] => 82043691
+                    [issuerName] => Diners Club
+                    [authorization] => 000000
+                    [paymentMethod] => diners
+                    [processorFields] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [value] => 012862272
+                                    [keyword] => merchantCode
+                                    [displayOn] => none
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [value] => 00033570
+                                    [keyword] => terminalNumber
+                                    [displayOn] => none
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [value] => 365454
+                                    [keyword] => bin
+                                    [displayOn] => none
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [value] => 0225
+                                    [keyword] => expiration
+                                    [displayOn] => none
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [value] => 1
+                                    [keyword] => installments
+                                    [displayOn] => none
+                                )
+
+                            [5] => stdClass Object
+                                (
+                                    [value] => 0008
+                                    [keyword] => lastDigits
+                                    [displayOn] => none
+                                )
+
+                            [6] => stdClass Object
+                                (
+                                    [value] => 7176e63d5cc9efebeaa4d2aa81adf1a7
+                                    [keyword] => id
+                                    [displayOn] => none
+                                )
+
+                            [7] => stdClass Object
+                                (
+                                    [value] => 000
+                                    [keyword] => b24
+                                    [displayOn] => none
+                                )
+
+                        )
+
+                    [internalReference] => 1598992110
+                    [paymentMethodName] => Diners
+                )
+
+        )
+
+    [subscription] => 
+)
+
+EL NUMERO DE FORMULARIO ES EL SIGUIENTE: There is not form number
+EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
+(
+    [requestId] => 3191739
+    [status] => stdClass Object
+        (
+            [status] => APPROVED
+            [reason] => 00
+            [message] => La petición ha sido aprobada exitosamente
+            [date] => 2024-10-11T17:30:18-05:00
+        )
+
+    [request] => stdClass Object
+        (
+            [locale] => es_CO
+            [buyer] => stdClass Object
+                (
+                    [document] => 1012565031
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => 3125623445
+                )
+
+            [payer] => stdClass Object
+                (
+                    [document] => 1012565031
+                    [documentType] => CC
+                    [name] => Carlos Fernando
+                    [surname] => Bernal Gomez
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => +573125623445
+                )
+
+            [payment] => stdClass Object
+                (
+                    [reference] => 82043692
+                    [description] => Pago en placetopay
+                    [amount] => stdClass Object
+                        (
+                            [currency] => COP
+                            [total] => 1470000
+                        )
+
+                    [allowPartial] => 
+                    [subscribe] => 
+                )
+
+            [fields] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [keyword] => _processUrl_
+                            [value] => https://checkout-test.placetopay.com/spa/session/3191739/c0172667c3e85db0e3eb83dd3c7f2b7e
+                            [displayOn] => none
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [keyword] => _session_
+                            [value] => 3191739
+                            [displayOn] => none
+                        )
+
+                )
+
+            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043692
+            [ipAddress] => 190.184.202.245
+            [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+            [expiration] => 2024-10-11T23:29:40.858Z
+        )
+
+    [payment] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [amount] => stdClass Object
+                        (
+                            [to] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [from] => stdClass Object
+                                (
+                                    [total] => 1470000
+                                    [currency] => COP
+                                )
+
+                            [factor] => 1
+                        )
+
+                    [status] => stdClass Object
+                        (
+                            [date] => 2024-10-11T17:29:53-05:00
+                            [reason] => 00
+                            [status] => APPROVED
+                            [message] => Aprobada
+                        )
+
+                    [receipt] => 99985793
+                    [refunded] => 
+                    [franchise] => CR_DN
+                    [reference] => 82043692
+                    [issuerName] => Diners Club
+                    [authorization] => 000000
+                    [paymentMethod] => diners
+                    [processorFields] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [value] => 012862272
+                                    [keyword] => merchantCode
+                                    [displayOn] => none
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [value] => 00033570
+                                    [keyword] => terminalNumber
+                                    [displayOn] => none
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [value] => 365454
+                                    [keyword] => bin
+                                    [displayOn] => none
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [value] => 0225
+                                    [keyword] => expiration
+                                    [displayOn] => none
+                                )
+
+                            [4] => stdClass Object
+                                (
+                                    [value] => 1
+                                    [keyword] => installments
+                                    [displayOn] => none
+                                )
+
+                            [5] => stdClass Object
+                                (
+                                    [value] => 0008
+                                    [keyword] => lastDigits
+                                    [displayOn] => none
+                                )
+
+                            [6] => stdClass Object
+                                (
+                                    [value] => 0d3e6cfbbe183cc655e41cc5bc344fb8
+                                    [keyword] => id
+                                    [displayOn] => none
+                                )
+
+                            [7] => stdClass Object
+                                (
+                                    [value] => 000
+                                    [keyword] => b24
+                                    [displayOn] => none
+                                )
+
+                        )
+
+                    [internalReference] => 1598992111
+                    [paymentMethodName] => Diners
+                )
+
+        )
+
+    [subscription] => 
+)
+
+EL NUMERO DE FORMULARIO ES EL SIGUIENTE: There is not form number

@@ -70,7 +70,7 @@ class CompleteTransactionCommand extends Command
 
             if (isset($accessToken)) {
                 foreach ($completedTransactions as $completedTransaction) {
-                    $response = $client->request('GET', $url . '/api/v1/checkout/payment-transaction/'.$completedTransaction['referencia'], [
+                    $response = $client->request('GET', $url . '/api/v1/checkout/payment-transaction/' . $completedTransaction['referencia'], [
                         'headers' => [
                             'Authorization' => 'Bearer ' . $accessToken,
                             'Accept' => 'application/json'
@@ -80,7 +80,7 @@ class CompleteTransactionCommand extends Command
                     $requestID = json_decode($response->getBody())->requestId;
 
                     if (isset($requestID)) {
-                        $response = $client->request('GET', $url . '/api/v1/payment-gateway/find-transaction/'.$requestID, [
+                        $response = $client->request('GET', $url . '/api/v1/payment-gateway/find-transaction/' . $requestID, [
                             'headers' => [
                                 'Authorization' => 'Bearer ' . $accessToken,
                                 'Accept' => 'application/json'
@@ -89,10 +89,12 @@ class CompleteTransactionCommand extends Command
 
                         $respuestaPagosResult = json_decode($response->getBody());
 
-                        //Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
+                        Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
 
                         if ((isset($respuestaPagosResult->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
-                               || $respuestaPagosResult->status->status == 'REJECTED')) {
+                                || $respuestaPagosResult->status->status == 'REJECTED')) {
+
+                                $email = $respuestaPagosResult->request->buyer->email;
 
                             if ($respuestaPagosResult->status->status == 'APPROVED') {
                                 $approvedStatus = true;
@@ -100,10 +102,17 @@ class CompleteTransactionCommand extends Command
                                 $pendingStatus = false;
                                 $cancelledStatus = false;
                                 $loginUser = $respuestaPagosResult->request->buyer->document;
-                                $response = $client->request('GET', $appURL . '/api/v1/SINU/form-number/'.$loginUser);
-                                //$loginPassword = json_decode($response->getBody())->form_number;
+                                $response = $client->request('GET', $appURL . '/api/v1/SINU/form-number/' . $loginUser);
+                                $formNumberStatus = json_decode($response->getBody()->getContents())->status;
+                                $loginPassword = json_decode($response->getBody())->message;
 
-                                Storage::append('messages.txt', 'EL NUMERO DE FORMULARIO ES EL SIGUIENTE: '.print_r($response->getBody(), true));
+                                Storage::append('messages.txt', 'EL NUMERO DE FORMULARIO ES EL SIGUIENTE: '.print_r($loginPassword, true));
+
+                                //Storage::append('messages.txt', 'LA PREINSCRIPCION ES LA SIGUIENTE: '.gettype($formNumberStatus));
+                                //Storage::append('messages.txt', 'LA PREINSCRIPCION ES LA SIGUIENTE: '.print_r(json_decode($response->getBody()->getContents()), true));
+                                //Storage::append('messages.txt', 'LA URL ES LA SIGUIENTE: '.$appURL . '/api/v1/SINU/form-number/'.$loginUser);
+                                //$loginPassword = json_decode($response->getBody())->form_number;
+                                //Storage::append('messages.txt', 'EL DOCUMENTO ES EL SIGUIENTE: '.$respuestaPagosResult->request->buyer->document);
                             }
 
                             if ($respuestaPagosResult->status->status == 'REJECTED') {
@@ -126,31 +135,36 @@ class CompleteTransactionCommand extends Command
                                 $pendingStatus = false;
                                 $cancelledStatus = true;
                             }
-                            die();
-                            $payload = [
-                                "email" => "cristian_delgado@cun.edu.co",
-                                "name" => "Cristian Delgado",
-	                            "headerText" => "¡Gracias por completar la transacción!",
-	                            "reference" => "123123",
-	                            "user" => $loginUser,
-	                            "password" => $loginPassword,
-	                            "pending" => $pendingStatus,
-	                            "approved" => $approvedStatus,
-	                            "rejected" => $rejectedStatus,
-	                            "cancelled" => $cancelledStatus
-                            ];
 
-                            $response = $client->request('POST', $appURL . '/api/v1/transaction/send-email', [
-                                'json' => $payload
-                            ]);
+                            if (($respuestaPagosResult->status->status == 'APPROVED' && $formNumberStatus == 200)
+                                || $respuestaPagosResult->status->status == 'REJECTED') {
 
-                            $completedTransaction->estado = 1;
-                            $completedTransaction->save();
+                                $payload = [
+                                    "email" => $email,
+                                    "name" => "Cristian Delgado",
+                                    "headerText" => "¡Gracias por completar la transacción!",
+                                    "reference" => "123123",
+                                    "user" => $loginUser,
+                                    "password" => $loginPassword,
+                                    "pending" => $pendingStatus,
+                                    "approved" => $approvedStatus,
+                                    "rejected" => $rejectedStatus,
+                                    "cancelled" => $cancelledStatus
+                                ];
+
+                                $response = $client->request('POST', $appURL . '/api/v1/transaction/send-email', [
+                                    'json' => $payload
+                                ]);
+
+                                //Storage::append('messages.txt', 'EL RESULTADO DEL ENVIO DE CORREO ES: '.print_r($response->getBody()->getContents(), true));
+
+                                //$completedTransaction->estado = 1;
+                                //$completedTransaction->save();
+                            }
                         }
                     }
                 }
             }
-
         } catch(\Throwable | \Exception $e) {
             Storage::append('messages.txt', 'ERROR: '. $e->getMessage());
         } finally {
