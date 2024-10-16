@@ -1,12 +1,13 @@
+
 EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
 (
-    [requestId] => 3192375
+    [requestId] => 3197816
     [status] => stdClass Object
         (
-            [status] => APPROVED
-            [reason] => 00
-            [message] => La petición ha sido aprobada exitosamente
-            [date] => 2024-10-15T20:17:18-05:00
+            [status] => REJECTED
+            [reason] => EX
+            [message] => La petición ha expirado
+            [date] => 2024-10-16T10:50:18-05:00
         )
 
     [request] => stdClass Object
@@ -14,27 +15,27 @@ EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
             [locale] => es_CO
             [buyer] => stdClass Object
                 (
-                    [document] => 1012565038
+                    [document] => 1012564047
                     [documentType] => CC
-                    [name] => Carlos
+                    [name] => Carlos Fernando
                     [surname] => Bernal Gomez
-                    [email] => userpruebas@gmail.com
-                    [mobile] => 3214578865
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => 3125623445
                 )
 
             [payer] => stdClass Object
                 (
-                    [document] => 1012565038
+                    [document] => 1012564047
                     [documentType] => CC
-                    [name] => Carlos
+                    [name] => Carlos Fernando
                     [surname] => Bernal Gomez
-                    [email] => userpruebas@gmail.com
-                    [mobile] => +573214578865
+                    [email] => cristian_delgado@cun.edu.co
+                    [mobile] => +573125623445
                 )
 
             [payment] => stdClass Object
                 (
-                    [reference] => 82043697
+                    [reference] => 82043704
                     [description] => Pago en placetopay
                     [amount] => stdClass Object
                         (
@@ -51,23 +52,23 @@ EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
                     [0] => stdClass Object
                         (
                             [keyword] => _processUrl_
-                            [value] => https://checkout-test.placetopay.com/spa/session/3192375/4437dd451ec299cb48d7d26362d911aa
+                            [value] => https://checkout-test.placetopay.com/spa/session/3197816/97262199433f49d5f0e7f9a35605a6fd
                             [displayOn] => none
                         )
 
                     [1] => stdClass Object
                         (
                             [keyword] => _session_
-                            [value] => 3192375
+                            [value] => 3197816
                             [displayOn] => none
                         )
 
                 )
 
-            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043697
+            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043704
             [ipAddress] => 190.184.202.245
             [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
-            [expiration] => 2024-10-15T19:33:02.024Z
+            [expiration] => 2024-10-16T15:44:25.670Z
         )
 
     [payment] => Array
@@ -93,16 +94,16 @@ EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
 
                     [status] => stdClass Object
                         (
-                            [date] => 2024-10-15T13:33:20-05:00
-                            [reason] => 00
-                            [status] => APPROVED
-                            [message] => Aprobada
+                            [date] => 2024-10-16T09:45:05-05:00
+                            [reason] => 92
+                            [status] => REJECTED
+                            [message] => Negada, puede ser tarjeta bloqueada o timeout
                         )
 
-                    [receipt] => 99917200
+                    [receipt] => 99989905
                     [refunded] => 
                     [franchise] => CR_DN
-                    [reference] => 82043697
+                    [reference] => 82043704
                     [issuerName] => Diners Club
                     [authorization] => 000000
                     [paymentMethod] => diners
@@ -145,28 +146,28 @@ EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
 
                             [5] => stdClass Object
                                 (
-                                    [value] => 0008
+                                    [value] => 0248
                                     [keyword] => lastDigits
                                     [displayOn] => none
                                 )
 
                             [6] => stdClass Object
                                 (
-                                    [value] => 06391557a01d9796964a8f882d441c77
+                                    [value] => f5a2af804da502ffe9f6e529461c2314
                                     [keyword] => id
                                     [displayOn] => none
                                 )
 
                             [7] => stdClass Object
                                 (
-                                    [value] => 000
+                                    [value] => 050
                                     [keyword] => b24
                                     [displayOn] => none
                                 )
 
                         )
 
-                    [internalReference] => 1598993043
+                    [internalReference] => 1598993403
                     [paymentMethodName] => Diners
                 )
 
@@ -175,360 +176,4 @@ EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
     [subscription] => 
 )
 
-EL RESULTADO DEL ENVIO DE CORREO ES: {"data":[{"code":"EM_104","additional_info":[],"message":"Email request received"}],"message":"OK","request_id":"2d6f.49b0bb31e771c629.b4.6494cc20-8b5c-11ef-9786-52540064429e.19292e6a1e2","object":"email"}
-EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
-(
-    [requestId] => 3192379
-    [status] => stdClass Object
-        (
-            [status] => APPROVED
-            [reason] => 00
-            [message] => La petición ha sido aprobada exitosamente
-            [date] => 2024-10-15T20:17:22-05:00
-        )
-
-    [request] => stdClass Object
-        (
-            [locale] => es_CO
-            [buyer] => stdClass Object
-                (
-                    [document] => 1012565039
-                    [documentType] => CC
-                    [name] => Carlos
-                    [surname] => Bernal Gomez
-                    [email] => cristian_delgado@cun.edu.co
-                    [mobile] => 3214578865
-                )
-
-            [payer] => stdClass Object
-                (
-                    [document] => 1012565039
-                    [documentType] => CC
-                    [name] => Carlos
-                    [surname] => Bernal Gomez
-                    [email] => cristian_delgado@cun.edu.co
-                    [mobile] => +573214578865
-                )
-
-            [payment] => stdClass Object
-                (
-                    [reference] => 82043698
-                    [description] => Pago en placetopay
-                    [amount] => stdClass Object
-                        (
-                            [currency] => COP
-                            [total] => 1471000
-                        )
-
-                    [allowPartial] => 
-                    [subscribe] => 
-                )
-
-            [fields] => Array
-                (
-                    [0] => stdClass Object
-                        (
-                            [keyword] => _processUrl_
-                            [value] => https://checkout-test.placetopay.com/spa/session/3192379/33b84c63f53336c981b722f11a2c61f9
-                            [displayOn] => none
-                        )
-
-                    [1] => stdClass Object
-                        (
-                            [keyword] => _session_
-                            [value] => 3192379
-                            [displayOn] => none
-                        )
-
-                )
-
-            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043698
-            [ipAddress] => 190.184.202.245
-            [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
-            [expiration] => 2024-10-15T19:35:47.120Z
-        )
-
-    [payment] => Array
-        (
-            [0] => stdClass Object
-                (
-                    [amount] => stdClass Object
-                        (
-                            [to] => stdClass Object
-                                (
-                                    [total] => 1471000
-                                    [currency] => COP
-                                )
-
-                            [from] => stdClass Object
-                                (
-                                    [total] => 1471000
-                                    [currency] => COP
-                                )
-
-                            [factor] => 1
-                        )
-
-                    [status] => stdClass Object
-                        (
-                            [date] => 2024-10-15T13:36:01-05:00
-                            [reason] => 00
-                            [status] => APPROVED
-                            [message] => Aprobada
-                        )
-
-                    [receipt] => 99917361
-                    [refunded] => 
-                    [franchise] => CR_DN
-                    [reference] => 82043698
-                    [issuerName] => Diners Club
-                    [authorization] => 000000
-                    [paymentMethod] => diners
-                    [processorFields] => Array
-                        (
-                            [0] => stdClass Object
-                                (
-                                    [value] => 012862272
-                                    [keyword] => merchantCode
-                                    [displayOn] => none
-                                )
-
-                            [1] => stdClass Object
-                                (
-                                    [value] => 00033570
-                                    [keyword] => terminalNumber
-                                    [displayOn] => none
-                                )
-
-                            [2] => stdClass Object
-                                (
-                                    [value] => 365454
-                                    [keyword] => bin
-                                    [displayOn] => none
-                                )
-
-                            [3] => stdClass Object
-                                (
-                                    [value] => 0225
-                                    [keyword] => expiration
-                                    [displayOn] => none
-                                )
-
-                            [4] => stdClass Object
-                                (
-                                    [value] => 1
-                                    [keyword] => installments
-                                    [displayOn] => none
-                                )
-
-                            [5] => stdClass Object
-                                (
-                                    [value] => 0008
-                                    [keyword] => lastDigits
-                                    [displayOn] => none
-                                )
-
-                            [6] => stdClass Object
-                                (
-                                    [value] => 392d129cac10c88dfcd1149d4478f542
-                                    [keyword] => id
-                                    [displayOn] => none
-                                )
-
-                            [7] => stdClass Object
-                                (
-                                    [value] => 000
-                                    [keyword] => b24
-                                    [displayOn] => none
-                                )
-
-                        )
-
-                    [internalReference] => 1598993046
-                    [paymentMethodName] => Diners
-                )
-
-        )
-
-    [subscription] => 
-)
-
-EL RESULTADO DEL ENVIO DE CORREO ES: {"data":[{"code":"EM_104","additional_info":[],"message":"Email request received"}],"message":"OK","request_id":"2d6f.49b0bb31e771c629.b4.66d5e280-8b5c-11ef-bfba-525400e18d05.19292e6b0a8","object":"email"}
-EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: stdClass Object
-(
-    [requestId] => 3192514
-    [status] => stdClass Object
-        (
-            [status] => APPROVED
-            [reason] => 00
-            [message] => La petición ha sido aprobada exitosamente
-            [date] => 2024-10-15T20:17:26-05:00
-        )
-
-    [request] => stdClass Object
-        (
-            [locale] => es_CO
-            [buyer] => stdClass Object
-                (
-                    [document] => 1012565040
-                    [documentType] => CC
-                    [name] => Carlos Fernando
-                    [surname] => Bernal Gomez
-                    [email] => cristian_delgado@cun.edu.co
-                    [mobile] => 3214578865
-                )
-
-            [payer] => stdClass Object
-                (
-                    [document] => 1012565040
-                    [documentType] => CC
-                    [name] => Carlos Fernando
-                    [surname] => Bernal Gomez
-                    [email] => cristian_delgado@cun.edu.co
-                    [mobile] => +573214578865
-                )
-
-            [payment] => stdClass Object
-                (
-                    [reference] => 82043699
-                    [description] => Pago en placetopay
-                    [amount] => stdClass Object
-                        (
-                            [currency] => COP
-                            [total] => 1470000
-                        )
-
-                    [allowPartial] => 
-                    [subscribe] => 
-                )
-
-            [fields] => Array
-                (
-                    [0] => stdClass Object
-                        (
-                            [keyword] => _processUrl_
-                            [value] => https://checkout-test.placetopay.com/spa/session/3192514/64acae95225ada2b258033518a1f870d
-                            [displayOn] => none
-                        )
-
-                    [1] => stdClass Object
-                        (
-                            [keyword] => _session_
-                            [value] => 3192514
-                            [displayOn] => none
-                        )
-
-                )
-
-            [returnUrl] => https://ventadirecta.cunapp.dev/views/transactionResult.php?reference=82043699
-            [ipAddress] => 190.184.202.245
-            [userAgent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
-            [expiration] => 2024-10-16T02:15:53.971Z
-        )
-
-    [payment] => Array
-        (
-            [0] => stdClass Object
-                (
-                    [amount] => stdClass Object
-                        (
-                            [to] => stdClass Object
-                                (
-                                    [total] => 1470000
-                                    [currency] => COP
-                                )
-
-                            [from] => stdClass Object
-                                (
-                                    [total] => 1470000
-                                    [currency] => COP
-                                )
-
-                            [factor] => 1
-                        )
-
-                    [status] => stdClass Object
-                        (
-                            [date] => 2024-10-15T20:16:25-05:00
-                            [reason] => 00
-                            [status] => APPROVED
-                            [message] => Aprobada
-                        )
-
-                    [receipt] => 99941385
-                    [refunded] => 
-                    [franchise] => CR_DN
-                    [reference] => 82043699
-                    [issuerName] => Diners Club
-                    [authorization] => 000000
-                    [paymentMethod] => diners
-                    [processorFields] => Array
-                        (
-                            [0] => stdClass Object
-                                (
-                                    [value] => 012862272
-                                    [keyword] => merchantCode
-                                    [displayOn] => none
-                                )
-
-                            [1] => stdClass Object
-                                (
-                                    [value] => 00033570
-                                    [keyword] => terminalNumber
-                                    [displayOn] => none
-                                )
-
-                            [2] => stdClass Object
-                                (
-                                    [value] => 365454
-                                    [keyword] => bin
-                                    [displayOn] => none
-                                )
-
-                            [3] => stdClass Object
-                                (
-                                    [value] => 0225
-                                    [keyword] => expiration
-                                    [displayOn] => none
-                                )
-
-                            [4] => stdClass Object
-                                (
-                                    [value] => 1
-                                    [keyword] => installments
-                                    [displayOn] => none
-                                )
-
-                            [5] => stdClass Object
-                                (
-                                    [value] => 0008
-                                    [keyword] => lastDigits
-                                    [displayOn] => none
-                                )
-
-                            [6] => stdClass Object
-                                (
-                                    [value] => cfeb9ecd471df9340c34ed097f20fe1c
-                                    [keyword] => id
-                                    [displayOn] => none
-                                )
-
-                            [7] => stdClass Object
-                                (
-                                    [value] => 000
-                                    [keyword] => b24
-                                    [displayOn] => none
-                                )
-
-                        )
-
-                    [internalReference] => 1598993198
-                    [paymentMethodName] => Diners
-                )
-
-        )
-
-    [subscription] => 
-)
-
-EL RESULTADO DEL ENVIO DE CORREO ES: {"data":[{"code":"EM_104","additional_info":[],"message":"Email request received"}],"message":"OK","request_id":"2d6f.49b0bb31e771c629.b4.69c58860-8b5c-11ef-acf9-5254000b1a0e.19292e6c3e6","object":"email"}
+entro al REJECTED

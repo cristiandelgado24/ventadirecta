@@ -90,7 +90,7 @@ class CompleteTransactionCommand extends Command
 
                         $respuestaPagosResult = json_decode($response->getBody());
 
-                        Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
+                        //Storage::append('messages.txt', 'EL CUERPO DE LA RESPUESTA ES EL SIGUIENTE: '.print_r($respuestaPagosResult, true));
 
                         if ((isset($respuestaPagosResult->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
                                 || $respuestaPagosResult->status->status == 'REJECTED')) {
@@ -123,6 +123,8 @@ class CompleteTransactionCommand extends Command
                             }
 
                             if ($respuestaPagosResult->status->status == 'REJECTED') {
+                                //Storage::append('messages.txt', 'entro al REJECTED');
+                                $headerText = '¡Lo sentimos! Tu transacción aún no ha sido aprobada!';
                                 $approvedStatus = false;
                                 $rejectedStatus = true;
                                 $pendingStatus = false;
@@ -158,7 +160,7 @@ class CompleteTransactionCommand extends Command
                                     'json' => $payload
                                 ]);
 
-                                Storage::append('messages.txt', 'EL RESULTADO DEL ENVIO DE CORREO ES: '.print_r($response->getBody()->getContents(), true));
+                                //Storage::append('messages.txt', 'EL RESULTADO DEL ENVIO DE CORREO ES: '.print_r($response->getBody()->getContents(), true));
 
                                 $completedTransaction->estado = 1;
                                 $completedTransaction->save();
