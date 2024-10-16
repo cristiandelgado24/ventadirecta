@@ -6,6 +6,7 @@ use App\Models\TransactionCompleted;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\Request;
 
 class CompleteTransactionCommand extends Command
 {
@@ -70,7 +71,7 @@ class CompleteTransactionCommand extends Command
 
             if (isset($accessToken)) {
                 foreach ($completedTransactions as $completedTransaction) {
-                    $response = $client->request('GET', $url . '/api/v1/checkout/payment-transaction/' . $completedTransaction['referencia'], [
+                    $response = $client->request(Request::METHOD_GET, $url . '/api/v1/checkout/payment-transaction/' . $completedTransaction['referencia'], [
                         'headers' => [
                             'Authorization' => 'Bearer ' . $accessToken,
                             'Accept' => 'application/json'
@@ -80,7 +81,7 @@ class CompleteTransactionCommand extends Command
                     $requestID = json_decode($response->getBody())->requestId;
 
                     if (isset($requestID)) {
-                        $response = $client->request('GET', $url . '/api/v1/payment-gateway/find-transaction/' . $requestID, [
+                        $response = $client->request(Request::METHOD_GET, $url . '/api/v1/payment-gateway/find-transaction/' . $requestID, [
                             'headers' => [
                                 'Authorization' => 'Bearer ' . $accessToken,
                                 'Accept' => 'application/json'
@@ -94,20 +95,26 @@ class CompleteTransactionCommand extends Command
                         if ((isset($respuestaPagosResult->status->status)) && ($respuestaPagosResult->status->status == 'APPROVED'
                                 || $respuestaPagosResult->status->status == 'REJECTED')) {
 
-                                $email = $respuestaPagosResult->request->buyer->email;
+                                $email = strval($respuestaPagosResult->request->buyer->email);
+                                $userName = $respuestaPagosResult->request->buyer->name.' '.$respuestaPagosResult->request->buyer->surname;
+                                $reference = strval($respuestaPagosResult->request->payment->reference);
+                                $headerText = null;
+                                $loginUser = null;
+                                $loginPassword = null;
 
                             if ($respuestaPagosResult->status->status == 'APPROVED') {
+                                $headerText = '¡Gracias por completar la transacción!';
+                                $loginUser = $respuestaPagosResult->request->buyer->document;
+                                $response = $client->request(Request::METHOD_GET, $appURL . '/api/v1/SINU/form-number/' . $loginUser);
+                                $formNumberStatus = json_decode($response->getBody()->getContents())->status;
+                                $loginPassword = json_decode($response->getBody())->message;
                                 $approvedStatus = true;
                                 $rejectedStatus = false;
                                 $pendingStatus = false;
                                 $cancelledStatus = false;
-                                $loginUser = $respuestaPagosResult->request->buyer->document;
-                                $response = $client->request('GET', $appURL . '/api/v1/SINU/form-number/' . $loginUser);
-                                $formNumberStatus = json_decode($response->getBody()->getContents())->status;
-                                $loginPassword = json_decode($response->getBody())->message;
 
-                                Storage::append('messages.txt', 'EL NUMERO DE FORMULARIO ES EL SIGUIENTE: '.print_r($loginPassword, true));
-
+                                //Storage::append('messages.txt', 'EL USUARIO ES EL SIGUIENTE: '.$respuestaPagosResult->request->buyer->name.' '.$respuestaPagosResult->request->buyer->surname);
+                                //Storage::append('messages.txt', 'EL NUMERO DE FORMULARIO ES EL SIGUIENTE: '.print_r($loginPassword, true));
                                 //Storage::append('messages.txt', 'LA PREINSCRIPCION ES LA SIGUIENTE: '.gettype($formNumberStatus));
                                 //Storage::append('messages.txt', 'LA PREINSCRIPCION ES LA SIGUIENTE: '.print_r(json_decode($response->getBody()->getContents()), true));
                                 //Storage::append('messages.txt', 'LA URL ES LA SIGUIENTE: '.$appURL . '/api/v1/SINU/form-number/'.$loginUser);
@@ -122,13 +129,6 @@ class CompleteTransactionCommand extends Command
                                 $cancelledStatus = false;
                             }
 
-                            if ($respuestaPagosResult->status->status == 'PENDING') {
-                                $approvedStatus = false;
-                                $rejectedStatus = false;
-                                $pendingStatus = true;
-                                $cancelledStatus = false;
-                            }
-
                             if ($respuestaPagosResult->status->status == 'REJECTED' && is_null($respuestaPagosResult->payment)) {
                                 $approvedStatus = false;
                                 $rejectedStatus = false;
@@ -136,30 +136,32 @@ class CompleteTransactionCommand extends Command
                                 $cancelledStatus = true;
                             }
 
-                            if (($respuestaPagosResult->status->status == 'APPROVED' && $formNumberStatus == 200)
+                            if (($respuestaPagosResult->status->status == 'APPROVED' && $formNumberStatus == 400)
                                 || $respuestaPagosResult->status->status == 'REJECTED') {
 
+                                //Storage::append('messages.txt', 'entrol al if');
+
                                 $payload = [
-                                    "email" => $email,
-                                    "name" => "Cristian Delgado",
-                                    "headerText" => "¡Gracias por completar la transacción!",
-                                    "reference" => "123123",
-                                    "user" => $loginUser,
-                                    "password" => $loginPassword,
-                                    "pending" => $pendingStatus,
-                                    "approved" => $approvedStatus,
-                                    "rejected" => $rejectedStatus,
-                                    "cancelled" => $cancelledStatus
+                                    'email' => $email,
+                                    'name' => $userName,
+                                    'headerText' => $headerText,
+                                    'reference' => $reference,
+                                    'user' => $loginUser,
+                                    'password' => $loginPassword,
+                                    'pending' => $pendingStatus,
+                                    'approved' => $approvedStatus,
+                                    'rejected' => $rejectedStatus,
+                                    'cancelled' => $cancelledStatus
                                 ];
 
-                                $response = $client->request('POST', $appURL . '/api/v1/transaction/send-email', [
+                                $response = $client->request(Request::METHOD_POST, $appURL . '/api/v1/transaction/send-email', [
                                     'json' => $payload
                                 ]);
 
-                                //Storage::append('messages.txt', 'EL RESULTADO DEL ENVIO DE CORREO ES: '.print_r($response->getBody()->getContents(), true));
+                                Storage::append('messages.txt', 'EL RESULTADO DEL ENVIO DE CORREO ES: '.print_r($response->getBody()->getContents(), true));
 
-                                //$completedTransaction->estado = 1;
-                                //$completedTransaction->save();
+                                $completedTransaction->estado = 1;
+                                $completedTransaction->save();
                             }
                         }
                     }

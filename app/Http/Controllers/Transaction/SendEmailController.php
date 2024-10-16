@@ -20,16 +20,16 @@ class SendEmailController extends Controller
     public function __invoke(SendEmailRequest $request)
     {
         $sendEmailDTO = new SendEmailDTO();
-        $sendEmailDTO->name = $request->input('name');
-        $sendEmailDTO->email = $request->input('email');
-        $sendEmailDTO->headerText = $request->input('headerText');
-        $sendEmailDTO->reference = $request->input('reference');
-        $sendEmailDTO->user = $request->input('user');
-        $sendEmailDTO->password = $request->input('password');
-        $sendEmailDTO->pending = $request->input('pending');
-        $sendEmailDTO->approved = $request->input('approved');
-        $sendEmailDTO->rejected = $request->input('rejected');
-        $sendEmailDTO->cancelled = $request->input('cancelled');
+        $sendEmailDTO->name = strval($request->input('name'));
+        $sendEmailDTO->email = strval($request->input('email'));
+        $sendEmailDTO->headerText = strval($request->input('headerText'));
+        $sendEmailDTO->reference = strval($request->input('reference'));
+        $sendEmailDTO->user = strval($request->input('user'));
+        $sendEmailDTO->password = strval($request->input('password'));
+        $sendEmailDTO->pending = boolval($request->input('pending'));
+        $sendEmailDTO->approved = boolval($request->input('approved'));
+        $sendEmailDTO->rejected = boolval($request->input('rejected'));
+        $sendEmailDTO->cancelled = boolval($request->input('cancelled'));
 
         return $this->sendEmailUseCase->handle($sendEmailDTO);
     }

@@ -4,14 +4,14 @@ namespace App\DTOs\Transaction;
 
 class SendEmailDTO
 {
-    public $email;
-    public $name;
-    public $headerText;
-    public $reference;
-    public $user;
-    public $password;
-    public $pending;
-    public $approved;
-    public $rejected;
-    public $cancelled;
+    public string $email;
+    public string $name;
+    public string $headerText;
+    public string $reference;
+    public string $user;
+    public string $password;
+    public string $pending;
+    public bool $approved;
+    public bool $rejected;
+    public bool $cancelled;
 }
