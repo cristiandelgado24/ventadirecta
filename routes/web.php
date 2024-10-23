@@ -30,8 +30,6 @@ Route::get('/complete-one-transaction', CompleteOneController::class)->name('tra
 Route::get('/generate-respuesta-pago/{id}', GenerateRespuestaPagoController::class)->name('transaction.generate-respuesta-pago');
 Route::get('/get-form-number/{document}', GetFormNumberController::class)->name('SINU.get-form-number');
 
-
-
 Route::get('/prueba', function() {
     try {
         DB::connection()->getPDO();
